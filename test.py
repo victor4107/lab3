@@ -5,7 +5,7 @@ import matrix as pt
 
 class MyTest(ut.TestCase): #створення класу для реалізації тестів
     def setUp(self):
-        self.mp=pt
+        self.mp=pt.A
     def test_usage1(self):#створення функції для тесту
         self.assertIsNot(self.mp.A, self.mp.transp(A))#використання команди self.assertIsNot() для порівняння матриці та транспонованої до неї
     def test_usage2(self):#створення функції для тесту
