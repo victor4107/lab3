@@ -1,7 +1,9 @@
+#!/usr/bin/env python -u
+
 import unittest as ut
 import copy
 import matrix as pt
-
+import xmlrunner
 
 class MyTest(ut.TestCase): #створення класу для реалізації тестів
     def setUp(self):
@@ -22,7 +24,6 @@ if __name__ == "__main__":
 
 
 if __name__ == '__main__':
-    import xmlrunner
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
 
 
